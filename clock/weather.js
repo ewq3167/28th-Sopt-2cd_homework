@@ -16,7 +16,7 @@ function printWeather(weather) {
   if (weather.rain) {
     weatherOthers.innerHTML = `<span>Humidity</span> ${weather.hum} % &nbsp;&nbsp
     <span>Rain:</span> ${weather.rain} mm.h &nbsp;&nbsp
-    <span>Wind:<span/> ${weather.wind} m/s`;
+    <span>Wind:</span> ${weather.wind} m/s`;
   } else {
     weatherOthers.innerHTML = `<span>Humidity</span> ${weather.hum} % &nbsp;&nbsp
   <span>Wind:</span> ${weather.wind} m/s`;
