@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.digital {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.digitalTime {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.digitalButton {
+  color: white;
+  background-color: skyblue;
+  border: 1px solid white;
+  margin-top: 3px;
+  margin-left: 20px;
+  height: 36px;
+  width: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  padding-right: 3px;
+}
+
+.analog_clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
+  margin: 30px auto;
+}
+
+.analog_clock > p {
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
+
+.analog_hour,
+.analog_minute,
+.analog_second {
+  height: 2px; /* 바늘의 두께 */
+  border-radius: 1px;
+  position: relative;
+  transform-origin: 100%; /* 오른쪽 끝을 기준으로 회전 */
+  transform: rotate(90deg);
+}
+
+.analog_hour {
+  z-index: 2;
+  width: 60px;
+  top: 100px;
+  left: 40px;
+  background-color: skyblue;
+}
+
+.analog_minute {
+  z-index: 1;
+  width: 90px;
+  top: 98px;
+  left: 10px;
+  background-color: skyblue;
+}
+
+.analog_second {
+  z-index: 3;
+  width: 90px;
+  top: 96px;
+  left: 10px;
+  background-color: red;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather_top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.weather_temperature {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weather_main {
+  font-size: 32px;
+  margin-left: 30px;
+  text-align: bottom;
+  margin-bottom: 5px;
+}
+
+.weather_temps,
+.weather_others {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.weather_temps > span,
+.weather_others > span {
+  color: lightgray;
+}
+
+.weather_icon > img {
+  width: 64px;
+  height: 64px;
+}
