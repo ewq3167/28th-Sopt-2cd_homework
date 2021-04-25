@@ -6,14 +6,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   box-sizing: border-box;
   transition: background 0.2 linear;
 }
 
 body.dark {
-  background-color: black;
+  background-color: rgb(54, 54, 54);
 }
 
 .checkbox {
@@ -22,12 +22,13 @@ body.dark {
 }
 
 .label {
-  background-color: #c2c2c2;
+  background-color: #d4d4d4;
   display: flex;
   border-radius: 50px;
   height: 26px;
   width: 50px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .Ball {
@@ -39,6 +40,7 @@ body.dark {
   position: absolute;
   border-radius: 50%;
   transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 4px rgba(0, 0, 0, 0.09);
 }
 
 .checkbox:checked + .label .Ball {
@@ -54,7 +56,6 @@ body.dark {
   height: 700px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .controls {

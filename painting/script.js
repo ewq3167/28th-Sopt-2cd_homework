@@ -6,7 +6,7 @@ const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 const toggle = document.getElementById("checkbox");
 
-toggle.addEventListener("check", () => {
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
