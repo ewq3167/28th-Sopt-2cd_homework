@@ -4,6 +4,11 @@ const range = document.getElementById("jsRange");
 const ctx = canvas.getContext("2d");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
+const toggle = document.getElementsByID("toggleBody");
+
+toggle.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+});
 
 const INITIAL_COLOR = "#2c2c2c";
 const CANVAS_SIZE = "700";
