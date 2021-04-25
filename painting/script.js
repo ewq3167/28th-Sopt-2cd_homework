@@ -4,9 +4,9 @@ const range = document.getElementById("jsRange");
 const ctx = canvas.getContext("2d");
 const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
-const toggle = document.getElementsByID("toggleBody");
+const toggle = document.getElementById("checkbox");
 
-toggle.addEventListener("change", () => {
+toggle.addEventListener("check", () => {
   document.body.classList.toggle("dark");
 });
 
